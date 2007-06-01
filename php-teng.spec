@@ -7,7 +7,7 @@
 Summary:	The %{realname} module for PHP
 Name:		php-%{modname}
 Version:	1.0.0
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		Development/PHP
 License:	LGPL
 URL:		http://teng.sourceforge.net/
