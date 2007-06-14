@@ -7,7 +7,7 @@
 Summary:	The %{realname} module for PHP
 Name:		php-%{modname}
 Version:	1.0.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 Group:		Development/PHP
 License:	LGPL
 URL:		http://teng.sourceforge.net/
@@ -24,6 +24,15 @@ This is a dynamic shared object (DSO) that adds Teng support to PHP.
 %setup -q -n php4-%{modname}-%{version}
 
 %build
+export CFLAGS="%{optflags}"
+export CXXFLAGS="%{optflags}"
+export FFLAGS="%{optflags}"
+
+%if %mdkversion >= 200710
+export CFLAGS="$CFLAGS -fstack-protector"
+export CXXFLAGS="$CXXFLAGS -fstack-protector"
+export FFLAGS="$FFLAGS -fstack-protector"
+%endif
 
 phpize
 %configure2_5x --with-libdir=%{_lib} \
@@ -59,5 +68,3 @@ rm -rf %{buildroot}
 %doc CREDITS README.%{modname}
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
-
-
