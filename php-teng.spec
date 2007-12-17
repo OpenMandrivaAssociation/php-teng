@@ -14,7 +14,6 @@ URL:		http://teng.sourceforge.net/
 Source0:	php4-%{modname}-%{version}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libteng-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This is a dynamic shared object (DSO) that adds Teng support to PHP.
