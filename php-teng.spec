@@ -1,3 +1,5 @@
+%define	snap 20071129
+
 %define	realname Teng
 %define	modname	teng
 %define	dirname	%{modname}
@@ -6,12 +8,12 @@
 
 Summary:	The %{realname} module for PHP
 Name:		php-%{modname}
-Version:	1.0.0
-Release:	%mkrel 9
+Version:	2.0.0
+Release:	%mkrel 0.%{snap}.1
 Group:		Development/PHP
 License:	LGPL
 URL:		http://teng.sourceforge.net/
-Source0:	php4-%{modname}-%{version}.tar.bz2
+Source0:	php4.tar.gz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libteng-devel
 BuildRoot:	%{_tmppath}/%{name}-buildroot
@@ -21,7 +23,7 @@ This is a dynamic shared object (DSO) that adds Teng support to PHP.
 
 %prep
 
-%setup -q -n php4-%{modname}-%{version}
+%setup -q -n php4
 
 %build
 %serverbuild
