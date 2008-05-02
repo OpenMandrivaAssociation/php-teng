@@ -9,14 +9,14 @@
 Summary:	The %{realname} module for PHP
 Name:		php-%{modname}
 Version:	2.0.0
-Release:	%mkrel 0.%{snap}.1
+Release:	%mkrel 0.%{snap}.2
 Group:		Development/PHP
 License:	LGPL
 URL:		http://teng.sourceforge.net/
 Source0:	php4.tar.gz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libteng-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is a dynamic shared object (DSO) that adds Teng support to PHP.
