@@ -6,7 +6,7 @@
 %define soname	%{modname}.so
 %define inifile	22_%{modname}.ini
 
-Summary:	The %{realname} module for PHP
+Summary:	General purpose templating engine for PHP
 Name:		php-%{modname}
 Version:	2.0.0
 Release:	%mkrel 0.%{snap}.3
@@ -19,7 +19,8 @@ BuildRequires:	libteng-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-This is a dynamic shared object (DSO) that adds Teng support to PHP.
+Teng is a general purpose templating engine (whence Teng), this package
+add Teng support to PHP. 
 
 %prep
 
