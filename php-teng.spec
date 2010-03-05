@@ -9,7 +9,7 @@
 Summary:	General purpose templating engine for PHP
 Name:		php-%{modname}
 Version:	2.0.0
-Release:	%mkrel 0.%{snap}.12
+Release:	%mkrel 0.%{snap}.13
 Group:		Development/PHP
 License:	LGPL
 URL:		http://teng.sourceforge.net/
