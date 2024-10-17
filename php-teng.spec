@@ -12,7 +12,7 @@ Version:	2.0.0
 Release:	%mkrel 0.%{snap}.22
 Group:		Development/PHP
 License:	LGPL
-URL:		http://teng.sourceforge.net/
+URL:		https://teng.sourceforge.net/
 Source0:	php4.tar.gz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libteng-devel
